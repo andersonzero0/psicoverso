@@ -15,15 +15,20 @@
 
     <!-- main -->
     <main>
-        <div>
-            <h1>Title</h1>
+
+        <div class="conteiner-text">
+            
+            <h1>PsicoVerso</h1>
             <p>
                 Bem-vindo(a) à nossa clínica psiquiátrica! Oferecemos serviços personalizados e especializados em saúde mental. Aqui, você encontrará um ambiente acolhedor e seguro, além de recursos úteis para aprender sobre saúde mental e bem-estar. Estamos prontos para ajudá-lo(a) em sua jornada de recuperação. Entre em contato conosco para saber mais ou agendar uma consulta.
             </p>
+
         </div>
+
         <div class="conteiner-image_fundo">
             <img src="assets/imgs/imagem-fundo.svg" alt="">
         </div>
+
     </main>
 
     <!-- footer -->

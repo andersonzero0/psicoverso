@@ -14,7 +14,7 @@
             </li>
         
             <li>
-                <a href="cadastro.php">
+                <a href="">
                     <i icon-name="log-in"></i>
                     <p>Conectar</p>
                 </a>
