@@ -9,12 +9,12 @@
 
     <title>Home</title>
 </head>
-<body>
+<body id="body_home">
     <!-- header -->
     <?php include "header.php" ?>
 
     <!-- main -->
-    <main>
+    <main id="main_home">
 
         <div class="conteiner-text">
             

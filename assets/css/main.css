@@ -19,8 +19,15 @@
     user-select: none;
 }
 
-body {
+#body_home {
     background-color: var(--color-white);
+}
+
+#registre_se{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font);
+    color: var(--color-black);
 }
 
 .header {
@@ -68,14 +75,14 @@ body {
     gap: 16px;
 }
 
-main {
+#main_home {
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
 }
 
-main > div {
+#main_home > div {
     width: 50vw;
     height: 100%;
 }
@@ -117,3 +124,53 @@ main > div {
     color: var(--color-gray);
     line-height: 1.3em;
 }
+
+/* AUTH */
+.body_auth {
+    background-color: var(--color-white);
+}
+
+.main_register {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    
+    margin-top: 20px;
+}
+
+.conteiner_formRegister {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    padding: 10px;
+}
+
+.formRegister {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4px;
+}
+
+.formRegister > label > input {
+    background-color: lightgray;
+    border: none;
+    padding: 1px 5px;
+}
+
+.formRegister > label > input:focus {
+    outline: none;
+}
+
+textarea {
+    background-color: lightgray;
+    border: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+/* --- AUTH */

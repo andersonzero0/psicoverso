@@ -7,14 +7,14 @@
         <ul class="navbar">
 
             <li>
-                <a href="#">
+                <a href="index.php">
                     <i icon-name="home"></i>
                     <p>Home</p>
                 </a>
             </li>
         
             <li>
-                <a href="">
+                <a href="auth.php">
                     <i icon-name="log-in"></i>
                     <p>Conectar</p>
                 </a>
