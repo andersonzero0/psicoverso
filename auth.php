@@ -24,7 +24,7 @@
 
                 <label for="telefone">Telefone:<input id="telefone" name="telefone" type="tel" required> </label>
 
-                <label for="about_user">Sobre você:<textarea name="about_user" id="about_user" cols="30" rows="10"></textarea></label>
+                <label for="about_user">Sobre você:<textarea name="about_user" id="about_user" cols="30" rows="5"></textarea></label>
 
                 <div>
                     <label for="client"><input type="radio" value="client" name="type_user" id="client">Cliente</label>
@@ -35,7 +35,12 @@
 
                 <label for="avatarURI">Foto de perfil:<input type="file" name="avatarURI" id="avatarURI" accept="image/jpg, image/jpeg, image/png"> </label>
 
-                <label for="fullname">CEP:<input id="cep" name="cep" type="number" required> </label>
+                <div>
+                    <label for="fullname">CEP:<input id="cep" name="cep" type="number" required> </label>
+
+                    <button type="button" id="btnSearchCEP"><i icon-name="search"></i></button>
+                </div>
+
                 <label for="fullname">UF:<input id="uf" name="uf" type="text" disabled> </label>
 
                 <label for="fullname">Cidade:<input id="city" name="city" type="text" disabled> </label>
