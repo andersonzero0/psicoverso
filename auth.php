@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <title>Conectar</title>
+    <title>PISICOVERSO | Conectar</title>
 </head>
 <body class="body_auth">
 
