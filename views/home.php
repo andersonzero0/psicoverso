@@ -40,9 +40,5 @@
         lucide.createIcons();
     </script>
 
-    <script>
-        
-    </script>
-
 </body>
 </html>
