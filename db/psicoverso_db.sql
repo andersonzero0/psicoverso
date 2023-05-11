@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 10, 2023 at 02:47 AM
+-- Generation Time: May 11, 2023 at 02:30 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -35,6 +35,14 @@ CREATE TABLE `users_tb` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
+-- Dumping data for table `users_tb`
+--
+
+INSERT INTO `users_tb` (`id`, `nome`, `email`, `senha`) VALUES
+(1, 'Manoel Gomes', 'manoel@bluepen.com', 'canetaazul'),
+(2, 'Ednaldo Pereira', 'ednaldo@mestre.com', 'mestre');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -52,7 +60,7 @@ ALTER TABLE `users_tb`
 -- AUTO_INCREMENT for table `users_tb`
 --
 ALTER TABLE `users_tb`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
