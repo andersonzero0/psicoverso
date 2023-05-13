@@ -1,3 +1,11 @@
+<?php
+    if(isset($_SESSION['chatON'])) {
+
+        header("location: chat.php");
+        
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +20,8 @@
     <main>
 
         <div>
-            <button>Quero ajuda</button>
-            <button>Posso ajudar</button>
+            <button><a href="models/model_createCall.php">Quero ajuda</a></button>
+            <button><a href="search.php">Posso ajudar</a></button>
         </div>
         
     </main>

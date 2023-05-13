@@ -203,3 +203,11 @@
     background-color: var(--color-white);
 }
 /* PAINEL - END */
+.main-loading{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}

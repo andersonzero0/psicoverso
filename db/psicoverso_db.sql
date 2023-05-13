@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 11, 2023 at 02:30 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Tempo de geração: 12/05/2023 às 15:58
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,27 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `psicoverso_db`
+-- Banco de dados: `psicoverso_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users_tb`
+-- Estrutura para tabela `calls`
+--
+
+CREATE TABLE `calls` (
+  `id` int(11) NOT NULL,
+  `id_creatorFK` int(11) NOT NULL,
+  `id_recieverFK` int(11) DEFAULT NULL,
+  `dateCreation` datetime DEFAULT NULL,
+  `call_status` varchar(7) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `users_tb`
 --
 
 CREATE TABLE `users_tb` (
@@ -35,32 +49,46 @@ CREATE TABLE `users_tb` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `users_tb`
+-- Despejando dados para a tabela `users_tb`
 --
 
 INSERT INTO `users_tb` (`id`, `nome`, `email`, `senha`) VALUES
 (1, 'Manoel Gomes', 'manoel@bluepen.com', 'canetaazul'),
-(2, 'Ednaldo Pereira', 'ednaldo@mestre.com', 'mestre');
+(2, 'Ednaldo Pereira', 'ednaldo@mestre.com', 'mestre'),
+(3, 'armandao', 'armando@gmail.com', '123'),
+(4, 'pedro', 'pg@gmail.com', '123');
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `users_tb`
+-- Índices de tabela `calls`
+--
+ALTER TABLE `calls`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices de tabela `users_tb`
 --
 ALTER TABLE `users_tb`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `users_tb`
+-- AUTO_INCREMENT de tabela `calls`
+--
+ALTER TABLE `calls`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT de tabela `users_tb`
 --
 ALTER TABLE `users_tb`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

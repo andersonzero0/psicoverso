@@ -31,9 +31,6 @@
 
     </main>
 
-    <!-- footer -->
-    <?php include "footer.php" ?>
-
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
