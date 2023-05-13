@@ -26,7 +26,7 @@
         function awaitLog() {
 
             const xhr = new XMLHttpRequest();
-            xhr.open('GET', `models/model_waitLog.php?idMyCall=<?= $_SESSION['chatON']['idMyCall'] ?>`);
+            xhr.open('GET', `models/model_waitLog.php?idMyCall=<?= $_SESSION['chatON']['id'] ?>`);
 
             xhr.onload = () => {
                 if(xhr.status === 200) {
@@ -36,7 +36,9 @@
                         
                     }
                 } else {
-                    console.log("error: " + xhr.status);
+
+                    console.log("error: " + xhr.status);    
+                    
                 }
             }
             xhr.send();

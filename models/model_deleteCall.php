@@ -1,8 +1,7 @@
 <?php
-session_start();
 
 require_once "../config/connect.php";
-$idMyCall = $_SESSION['chatON']['idMyCall'];
+$idMyCall = $_SESSION['chatON']['id'];
 
 $sqlDeleteCall = "DELETE FROM calls WHERE id = $idMyCall";
 $conn->query($sqlDeleteCall);

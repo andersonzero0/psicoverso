@@ -11,12 +11,13 @@
 
         $rowWaitLog = $resultWaitLog->fetch_assoc();
 
-        $_SESSION['chatON']['call_status'] = [
+        $_SESSION['chatON'] = [
             "id" => $rowWaitLog['id'],
             "id_creatorFK" => $rowWaitLog['id_creatorFK'],
             "id_recieverFK" => $rowWaitLog['id_recieverFK'],
             "call_status" => $rowWaitLog['call_status']
         ];
+
         echo "true";
         
 

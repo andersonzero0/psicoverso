@@ -13,7 +13,7 @@
             
         } else {
             
-            require "closedChat.php";
+            require "views/closedChat.php";
             
         }
 
