@@ -24,7 +24,7 @@ if ($_SESSION['chatON']['id_recieverFK'] == $_SESSION['authToken']['id']) {
             <p id="p-link">Link: </p>
         </div>
 
-        <?php if($what == "creator") { ?>
+        <?php if($what == "reciever") { ?>
 
         <div>
 
