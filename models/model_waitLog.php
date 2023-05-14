@@ -9,6 +9,9 @@
 
     if($resultWaitLog->num_rows > 0) {
 
+        $sqlCreateCallLink = "INSERT INTO call_links(id_call) VALUES ($idMyCall)";
+        $conn->query($sqlCreateCallLink);
+
         $rowWaitLog = $resultWaitLog->fetch_assoc();
 
         $_SESSION['chatON'] = [
@@ -17,6 +20,7 @@
             "id_recieverFK" => $rowWaitLog['id_recieverFK'],
             "call_status" => $rowWaitLog['call_status']
         ];
+
 
         echo "true";
         
