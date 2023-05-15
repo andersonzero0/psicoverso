@@ -20,9 +20,9 @@
             <img src="assets/imgs/loading.gif" alt="">
         </div>
 
-        <div>
-            <button><a href="controllers/exit-load.php">Cancelar busca</a></button>
-        </div>
+
+            <button class="btn-painel"><a href="controllers/exit-load.php">Cancelar busca</a></button>
+        
         
     </main>
 

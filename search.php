@@ -14,6 +14,10 @@
                 <img src="assets/imgs/loading.gif" alt="">
             </div>
 
+
+                <button class="btn-painel"><a href="index.php">Cancelar busca</a></button>
+         
+
         </main>
 
         <script>

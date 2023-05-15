@@ -15,25 +15,32 @@ if ($_SESSION['chatON']['id_recieverFK'] == $_SESSION['authToken']['id']) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Chat</title>
 </head>
 <body>
-    <main>
-
-        <div>
-            <p id="p-link">Link: </p>
-        </div>
-
+    <?php
+        include "views/header.php"
+    ?>
+    <main class="main-chat"> 
         <?php if($what == "reciever") { ?>
-
-        <div>
-
+            <div class="main-chat" style="gap:10px">
+            <label >Digite o link para comunicação:</label>
             <input type="text" id="link">
-            <button type="button" id="btnLink">Enviar</button>
-            
-        </div>    
+            <button type="button" id="btnLink" class="btn-painel" style="background-color: green; color:white; font-weight:bolder;">Enviar</button>
+
+        </div>  
 
         <?php } ?>
+        <div class="main-chat" style="gap:10px">
+
+            <a id="p-link">Link para comunicação: </a>
+            <?php if($what == "creator") { ?>
+                <p>Espere que envie o link</p>
+            <?php } ?>
+            <button class="btn-painel" style="font-size: 0.5em"><a href="controllers/exit-load.php">Sair do chat</a></button>
+        </div>
+
         
     </main>
 
@@ -50,7 +57,8 @@ if ($_SESSION['chatON']['id_recieverFK'] == $_SESSION['authToken']['id']) {
             if(xhr.status === 200) {
                 if(xhr.responseText != "false") {
                     
-                    document.getElementById('p-link').innerHTML = "Link: " + xhr.responseText
+                    document.getElementById('p-link').innerHTML = "Link para comunicação: " + xhr.responseText
+                    document.getElementById('p-link').href = "https://" + xhr.responseText
                     
                 }
             } else {
@@ -86,6 +94,10 @@ if ($_SESSION['chatON']['id_recieverFK'] == $_SESSION['authToken']['id']) {
             
         })
         
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
     </script>
 </body>
 </html>

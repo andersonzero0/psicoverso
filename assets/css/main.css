@@ -211,3 +211,54 @@
     height: 100vh;
     
 }
+
+.painel {
+    display: flex;
+    align-items: center;
+    flex-flow: column  nowrap;
+    justify-content: center;
+    height: 80vh;
+    gap: 50px;
+}
+
+.btn-painel a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+.btn-painel{
+    padding: 10px 20px ;
+    background-color: var(--color-red);
+    border-style: none;
+    border-radius:  20px;
+    transition: ease 0.2s;
+}
+
+.btn-painel:hover{
+    background-color: var(--color-yellow);
+    transform: scale(1.05);
+    transition: ease 0.2s;
+}
+
+.main-chat {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 60vh;
+}
+
+#p-link{
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+#link{
+    padding: 5px 8px;
+    border-radius: 8px;
+}
