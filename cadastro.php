@@ -22,7 +22,7 @@
         
         </form>
 
-        <p>Não possui uma conta? <a href="login.php">Faça login.</a> </p>
+        <p>Possui uma conta? <a href="login.php">Faça login.</a> </p>
     </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>

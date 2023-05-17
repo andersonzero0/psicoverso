@@ -21,7 +21,7 @@
         
         </form>
 
-        <p>Já possui uma conta? <a href="cadastro.php">Faça seu cadastro.</a> </p>
+        <p>Não possui uma conta? <a href="cadastro.php">Faça seu cadastro.</a> </p>
     </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
